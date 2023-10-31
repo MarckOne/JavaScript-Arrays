@@ -1,0 +1,85 @@
+concat()
+    Junta dois arrays, colocando o array passado como argumento, logo depois do primeiro. Em português essa operação é conhecida como concatenação.
+    Não altera o array no qual foi chamado, então precisamos salvar esse resultado em um novo array.
+
+filter()
+    Retorna uma lista contando todos os elementos que passaram em um teste, ou seja, uma função escrita por nós.
+    Não altera o array onde foi chamado, então precisamos salvar esse resultado em um novo array.
+
+find()
+    Funciona de forma parecida com o filter, porém retorna apenas o primeiro valor que satisfizer o teste, podendo ser uma string ou um número.
+
+findIndex()
+    Funciona igual o find(), mas retorna o índice em vez do elemento, possibilitando usá-lo em outras partes do código.
+
+lastIndexOf()
+    É igual o findIndex() porém começa do último elemento, não no primeiro.
+
+forEach()
+    Executa uma função em cada elemento do array de forma individual.
+    Não altera o array original e nem retorna um valor, deixando esse trabalho a cargo da função escolhida.
+
+pop()
+    Retira o último elemento do array.
+    Altera o array original removendo o elemento.
+
+shift()
+    Retira o primeiro elemento do array.
+    Altera o array original removendo o elemento e trocando o índice de todos os elementos para um a menos do que eram, o índice 1 passa a ser o 0, o 2 passa a ser o 1, e assim por diante.
+
+push()
+    Adiciona o elemento passado como parâmetro do array, porém na última posição.
+    Altera o array original com o novo valor.
+
+unshift()
+    Funciona igual ao push(), porém adiciona na primeira posição e acaba trocando o índice de todos os elementos.
+    Altera o array original com o novo valor.
+
+reduce()
+    Utiliza uma função definida pelo usuário em cada um dos elementos, guardando o resultado em uma variável que pode ser acessada dentro da função que foi definida, retornando um único valor no final, reduzindo o array para um único valor.
+
+reduceRight()
+    Funciona igual o reduce() porém começa do final do array e segue até o início.
+
+reverse()
+    Inverte a ordem dos elementos do array, então o primeiro vira o último, o segundo o penúltimo e assim por diante.
+
+slice()
+    Copia uma parte do array para outro array.
+
+sort()
+    Organiza o array de acordo com a classificação Unicode, onde os números vêm antes das letras, porém não funciona corretamente para números, onde temos que definir uma função que irá auxiliar o comando.
+
+splice()
+    Consegue remover, um ou mais elementos consecutivos caso o segundo parâmetro tenha um valor maior que 0, e incluir um ou mais elementos a partir de um índice escolhido.
+
+Utilizar os métodos includes() e indexOf():
+    O includes() retorna true ou false, dependendo se o valor passado como parâmetro está presente ou não no array. O indexOf() retorna a posição no array do valor passado como parâmetro. 
+    Utilizamos esses dois métodos em conjunto para primeiro verificar se um aluno estava presente em uma lista, e depois obter sua posição para buscar sua nota em outra lista.
+
+Desestruturar um array:
+    Você aprendeu a sintaxe de desestruturação, disponível desde o ES6 (EcmaScript 6), que nos permite criar várias novas variáveis ao mesmo tempo a partir dos elementos de um array.
+
+Utilizar a estrutura for e entender seu funcionamento:
+    O for é constituído de três expressões: criação da variável de controle; condição de execução; modificação da variável de controle. Essas três expressões juntas definem quantas vezes o bloco do for será executado.
+
+Utilizar a estrutura for of e entender a diferença em relação ao for:
+    O for of sempre é utilizado para percorrer todos os elementos de um array, do início ao fim. Para esses casos, o for of é mais conciso que o for.
+
+Como utilizar o forEach:
+    Aprendemos mais uma forma de iterar sobre arrays, dessa vez com um método próprio deles. O forEach recebe uma função callback que será executada para cada item do array.
+
+Diferentes formas de utilizar funções callback:
+    Podemos utilizar funções anônimas (como arrow functions) diretamente como funções callback, ou então criar funções de forma externa e utilizá-las no parâmetro.
+
+Como utilizar o map:
+    O map também aceita funções callback, assim como o forEach, e é adequado para quando queremos "reescrever" os valores de um array, sem modificar o array original. Um novo array é criado com os valores reescritos.
+
+Como utilizar o filter e o reduce:
+    Aprendemos mais métodos modernos do JavaScript que nos ajudam em situações mais específicas. Utilizamos o filter para criar um array filtrado a partir de um existente e o reduce para acumular valores de um array em um só.
+
+Como clonar arrays com o spread operator ...:
+    Entendemos o problema de referência do JavaScript ao tentar atribuir um array a um novo. Para resolver esse problema, utilizamos o spread operator para espalhar todos os valores de um array em um novo, realizando a clonagem com sucesso.
+
+Como utilizar a estrutura Set:
+    Vimos como criar um Set a partir de um array existente, a fim de remover todas as suas duplicatas. Em seguida, utilizamos o spread operator para converter o Set de volta em um lista.
